@@ -1,0 +1,39 @@
+$header-height: 120px;
+$header-top-height: 50px;
+
+.header-top {
+    width: 100%;
+    height: $header-top-height;
+    border-bottom: 1px solid $color2;
+    div {
+        float:left;
+        height: $header-top-height;
+        line-height: $header-top-height;
+        margin-left: 20px;
+    }
+}
+
+.header{
+    height: $header-height;
+    width: 100%;
+
+    .logo{
+        height: 80px;
+        margin-top: 20px;
+        display:block;
+        float: left;
+        img{
+            height: 100%;
+        }
+    }
+    nav{
+        line-height: $header-height;
+        float:right;
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}

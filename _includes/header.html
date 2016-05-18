@@ -1,0 +1,33 @@
+<header class="site-header">
+    <div class="header-top container contact">
+        <div class="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:921435919">921 43 59 19</a>
+        </div>
+        <div>
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <a href="tel:645232323">645 23 23 23</a>
+        </div>
+        <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contacto@matiasgomez.es">contacto@matiasgomez.es</a>
+        </div>
+    </div>
+
+    <div class="header container">
+
+        <a class="logo" href="{{ site.baseurl }}/" alt="{{ site.title }}">
+            <img src="assets/img/logo.jpeg" />
+        </a>
+
+        <nav>
+
+            <ul>
+                {% for my_page in site.pages %} {% if my_page.title %}
+                <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li> {% endif %} {% endfor %}
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
