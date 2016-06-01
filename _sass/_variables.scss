@@ -1,7 +1,6 @@
+// $color1: #0001fc;
+// $color2: #ff0109;
+$color1: #4b4ce5;
+$color2: #ff4349;
 
-
-$color1: rgba(255, 255, 255, 1); //
-$color2: rgba(200, 200, 200, 1); //
-
-
-$background: $color1;
+$color1Dark: darken($color1, 20%);

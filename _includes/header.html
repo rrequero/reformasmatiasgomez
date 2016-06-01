@@ -1,33 +1,164 @@
-<header class="site-header">
-    <div class="header-top container contact">
-        <div class="">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:921435919">921 43 59 19</a>
-        </div>
-        <div>
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <a href="tel:645232323">645 23 23 23</a>
-        </div>
-        <div>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:contacto@matiasgomez.es">contacto@matiasgomez.es</a>
-        </div>
-    </div>
+<header class="header-v1">
 
-    <div class="header container">
+            <div class="top">
 
-        <a class="logo" href="{{ site.baseurl }}/" alt="{{ site.title }}">
-            <img src="assets/img/logo.jpeg" />
-        </a>
+                <div class="center">
 
-        <nav>
+                    <div class="left">
 
-            <ul>
-                {% for my_page in site.pages %} {% if my_page.title %}
-                <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li> {% endif %} {% endfor %}
-            </ul>
-        </nav>
+                        <a href="/index.html">
 
-    </div>
+                            <img src="{{ "/assets/img/logo.jpeg" |  prepend: site.baseurl }}" alt="Reformas Matias Gomez" class="logo">
 
-</header>
+                        </a>
+
+                    </div>
+
+                    <div class="right">
+
+                        <div class="contact-element">
+
+                            <i class="fa fa-phone"></i>
+
+                            <span class="contact-element-title">Live Help</span>
+                            <span class="contact-element-content"><a href="tel:123456789000">(+123) 456 789 000</a></span>
+
+                        </div>
+
+                        <div class="contact-element">
+
+                            <i class="fa fa-clock-o"></i>
+
+                            <span class="contact-element-title">Opening hours</span>
+                            <span class="contact-element-content">08:00 - 16:00</span>
+
+                        </div>
+
+                        <div class="contact-element contact-element-last">
+
+                            <i class="fa fa-comments-o"></i>
+
+                            <span class="contact-element-title">Email Us</span>
+                            <span class="contact-element-content"><a href="mailto:support@martanian.com">support@martanian.com</a></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <div class="center">
+
+                    <nav>
+
+                        <ul class="menu">
+
+                            <li class="active"><a href="/index.html">Home</a></li>
+                            <li class="with-submenu">
+
+                                <a href="/services.html">Services <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+
+                                    <li><a href="/services.html">All services</a></li>
+                                    <li><a href="/services-sidebar-left.html">Sidebar on left side</a></li>
+                                    <li><a href="/services-sidebar-right.html">Sidebar on right side</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li class="with-submenu">
+
+                                <a href="/projects-3-columns.html">Projects <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+
+                                    <li><a href="/projects-3-columns.html">All projects, 3 columns</a></li>
+                                    <li><a href="/projects-4-columns.html">All projects, 4 columns</a></li>
+                                    <li><a href="/single-project-version-1.html">Single project v1</a></li>
+                                    <li><a href="/single-project-version-2.html">Single project v2</a></li>
+                                    <li><a href="/single-project-version-3.html">Single project v3</a></li>
+                                    <li><a href="/single-project-version-4.html">Single project v4</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li><a href="/gallery.html">Gallery</a></li>
+                            <li class="with-submenu">
+
+                                <a href="/about-company.html">About us <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+
+                                    <li><a href="/about-company.html">About Company</a></li>
+                                    <li><a href="/about-advisor.html">About Advisor</a></li>
+                                    <li><a href="/careers.html">Careers</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li><a href="/news.html">News</a></li>
+                            <li class="with-submenu">
+
+                                <a href="/landing-page.html">Pages <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu">
+
+                                    <li><a href="/landing-page.html">Landing page</a></li>
+                                    <li><a href="/get-a-quote.html">Get a Quote</a></li>
+                                    <li><a href="/multiple-contacts.html">Multiple Contacts</a></li>
+                                    <li><a href="/faq.html">FAQ</a></li>
+                                    <li class="with-submenu">
+
+                                        <a href="#"><i class="fa fa-caret-left"></i> Submenu</a>
+                                        <ul class="submenu">
+
+                                            <li><a href="#">Submenu</a></li>
+                                            <li class="with-submenu">
+
+                                                <a href="#"><i class="fa fa-caret-left"></i> Submenu</a>
+                                                <ul class="submenu">
+
+                                                    <li><a href="#">Submenu</a></li>
+                                                    <li><a href="#">Submenu</a></li>
+                                                    <li><a href="#">Submenu</a></li>
+
+                                                </ul>
+
+                                            </li>
+                                            <li><a href="#">Submenu</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li><a href="/404-black.html">404 page - black</a></li>
+                                    <li><a href="/404-white.html">404 page - white</a></li>
+                                    <li><a href="/coming-soon-black.html">Coming soon - black</a></li>
+                                    <li><a href="/coming-soon-white.html">Coming soon - white</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li><a href="/contact.html">Contact</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                    <div class="multilingual" data-name="Change language:">
+
+                        <span class="current-language">EN <i class="fa fa-caret-down"></i></span>
+                        <ul class="possible-languages">
+
+                            <li><a href="#">DE</a></li>
+                            <li><a href="#">FR</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>

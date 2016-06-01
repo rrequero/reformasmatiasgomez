@@ -4,17 +4,24 @@
   {% include head.html %}
 
   <body>
+    {% include loader.html %}
+    <div class="wrapper wrapper-wide">
+        {% include header.html %}
+        {% include header-slider.html %}
+        {% include offer.html %}
+        {% include have-a-project.html %}
+        {% include image-parallax.html %}
+        {% include contact.html %}
 
-    {% include header.html %}
+        <div class="page-content">
+          <div class="wrapper">
+            {{ content }}
+          </div>
+        </div>
+        {% include footer.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
     </div>
-
-    {% include footer.html %}
-
+    {% include scripts.html %}
   </body>
 
 </html>
