@@ -10,7 +10,7 @@ title: Matias Gomez - Reformas
 email: reformas@matiasgomez.es
 description: > # this means to ignore newlines until "baseurl:"
   Matias Gomez, empresa de reformas y obras. Pide tu presupuesto sin compromiso.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/reformasmatiasgomez" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
