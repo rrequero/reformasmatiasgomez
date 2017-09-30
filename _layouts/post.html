@@ -1,15 +1,76 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<body>
+  {% include loader.html %}
+  <div class="wrapper wrapper-wide">
+    {% include header.html %}
+    <section class="content-with-sidebar content-with-sidebar-left with-additional-padding-top">
+        
+            <div class="center">
+            
+                <div class="sidebar">
+    
+                    <div class="widget widget-last">
+                    
+                        <h3 class="slim"><strong>Detalles</strong> del proyecto <span class="highlight">Renovación</span></h3>
+    
+                        <h5>Cliente:</h5>
+                        <p>{{ page.client }}</p>
+                        
+                        <h5>Localización:</h5>
+                        <p>{{ page.location }}</p>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+                        <h5>Fecha:</h5>
+                        <p>{{ page.date }}</p>
+                        
+                        <h5>Valor:</h5>
+                        <p>{{ page.value }}</p>
+                        
+                        <h5>Arquitecto:</h5>
+                        <p class="without-margin-bottom">{{ page.architect }}</p>
+    
+                    </div>
+    
+                </div> 
+                
+                <div class="content">
+    
+                    <div class="images images-big">
+                        {% for image in page.images %}
+                        <div class="image" style="background-image: url( '{{ site.url }}{{ image }}' );">
+                        </div>
+                        {% endfor %}
+                    
+                    </div>
+    
+                    {{content}}
+                    
+                    
+                </div>
+                
+                <div class="clear">
+                </div>
+            
+            </div>
+        
+        </section>
+    <!-- <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{%
+          endif %}</p>
+      </header>
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </article> -->
+    {% include contact.html %}
+    {% include footer.html %}
   </div>
+  {% include scripts.html %}
+</body>
 
-</article>
+</html>

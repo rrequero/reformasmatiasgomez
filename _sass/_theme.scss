@@ -2662,12 +2662,18 @@ header.header-v1 .bottom .multilingual .possible-languages li a:hover {
         z-index: 500;
     }
 
+    header.header-v1 .top .center {
+        display: flex;
+    }
+
     header.header-v1 .top .left {
         width: 240px;
         margin: 0;
-        display: block;
         vertical-align: middle;
         height: 82px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 2;
     }
 
     header.header-v1 .top .left img {
@@ -2675,7 +2681,13 @@ header.header-v1 .bottom .multilingual .possible-languages li a:hover {
     }
 
     header.header-v1 .top .right {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        .quick-call{
+            margin-bottom: 0;
+            border: 0;
+            width: 210px;
+        }
     }
 
     header.header-v1 .bottom .center {
