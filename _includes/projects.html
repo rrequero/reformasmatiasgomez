@@ -1,25 +1,25 @@
 <section class="presentation presentation-filtered with-additional-padding-top">
     <div class="center">
-        <h2 class="slim"><strong>Projects</strong> Overview<span class="highlight">Mi metus fermentum odio</span></h2>
+        <h2 class="slim"><strong>Proyectos</strong> finalizados<span class="highlight"></span></h2>
         <ul class="presentation-filter">
             <li class="filter filter-active" data-filter="*">All</li>
-            <li class="filter" data-filter=".presentation-filter-buildings">Buildings</li>
-            <li class="filter" data-filter=".presentation-filter-renovations">Renovations</li>
+            <li class="filter" data-filter=".presentation-filter-buildings">Construcciones</li>
+            <li class="filter" data-filter=".presentation-filter-renovations">Renovaciones</li>
         </ul>
         <div class="presentation-box presentation-box-4-columns">
             {% for post in site.posts %}
-            <div class="presentation-box-single presentation-filter-{{ post.categories }}" style="background-image: url( '{{ site.url }}{{ post.main_image }}' );">
+            <div class="presentation-box-single presentation-filter-{{ post.categories }}" style="background-image: url( '{{ post.main_image |  prepend: site.baseurl }}' );">
                 <div class="presentation-box-single-caption">
                     <h4 class="slim"><strong>{{ post.title }}</strong> <span class="highlight">{{ post.categories }}</span></h4>
                     <p class="without-margin-bottom">
-                        <a href="{{ post.url }}"><span class="circle-link"><i class="fa fa-link"></i></span></a>
+                        <a href="{{ post.url |  prepend: site.baseurl }}"><span class="circle-link"><i class="fa fa-link"></i></span></a>
                         <span class="circle-link circle-link-image"><i class="fa fa-search"></i></span>
                     </p>
                 </div>
             </div>
 
             {% endfor %}
-            <div class="presentation-box-single presentation-filter-buildings" style="background-image: url( 'assets/img/image.png' );">
+            <!-- <div class="presentation-box-single presentation-filter-buildings" style="background-image: url( 'assets/img/image.png' );">
                 <div class="presentation-box-single-caption">
                     <h4 class="slim"><strong>Family Home</strong> <span class="highlight">Construction</span></h4>
                     <p class="without-margin-bottom">
@@ -72,7 +72,7 @@
                         <span class="circle-link circle-link-image"><i class="fa fa-search"></i></span>
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
